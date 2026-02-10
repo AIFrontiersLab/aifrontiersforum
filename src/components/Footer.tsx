@@ -1,4 +1,5 @@
-import { Brain, Sparkles, Github, Twitter } from "lucide-react";
+import { Github, Twitter } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -7,13 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
           <div className="md:col-span-1">
             <a href="/" className="flex items-center gap-2 mb-4">
-              <div className="relative">
-                <Brain className="h-6 w-6 text-primary" />
-                <Sparkles className="absolute -top-1 -right-1 h-3 w-3 text-accent" />
-              </div>
-              <span className="font-display text-base font-bold text-foreground">
-                AI Innovators<span className="text-primary"> Forum</span>
-              </span>
+              <img src={logo} alt="AI Innovators Forum" className="h-9 w-auto" />
             </a>
             <p className="text-sm text-muted-foreground leading-relaxed">
               The global platform for AI research, innovation, and collaboration.
