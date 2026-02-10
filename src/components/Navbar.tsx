@@ -1,0 +1,73 @@
+import { motion } from "framer-motion";
+import { Brain, Sparkles, Menu, X } from "lucide-react";
+import { useState } from "react";
+
+const navLinks = ["Research", "Trends", "Community", "Events", "About"];
+
+const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <motion.nav
+      initial={{ y: -20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      className="fixed top-0 left-0 right-0 z-50 glass-panel"
+    >
+      <div className="container mx-auto flex items-center justify-between px-6 py-4">
+        <a href="/" className="flex items-center gap-2">
+          <div className="relative">
+            <Brain className="h-7 w-7 text-primary animate-pulse-glow" />
+            <Sparkles className="absolute -top-1 -right-1 h-3 w-3 text-accent" />
+          </div>
+          <span className="font-display text-lg font-bold tracking-tight text-foreground">
+            AI Innovators<span className="text-primary"> Forum</span>
+          </span>
+        </a>
+
+        <div className="hidden md:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <a
+              key={link}
+              href={`#${link.toLowerCase()}`}
+              className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
+            >
+              {link}
+            </a>
+          ))}
+          <button className="bg-gradient-cta text-primary-foreground px-5 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity">
+            Join Forum
+          </button>
+        </div>
+
+        <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
+          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </button>
+      </div>
+
+      {open && (
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          className="md:hidden border-t border-border px-6 py-4 flex flex-col gap-4"
+        >
+          {navLinks.map((link) => (
+            <a
+              key={link}
+              href={`#${link.toLowerCase()}`}
+              className="text-sm text-muted-foreground hover:text-primary transition-colors"
+              onClick={() => setOpen(false)}
+            >
+              {link}
+            </a>
+          ))}
+          <button className="bg-gradient-cta text-primary-foreground px-5 py-2 rounded-lg text-sm font-semibold">
+            Join Forum
+          </button>
+        </motion.div>
+      )}
+    </motion.nav>
+  );
+};
+
+export default Navbar;
