@@ -1,4 +1,5 @@
-import { Brain, Sparkles, Github, Twitter } from "lucide-react";
+import { Github, Twitter } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
