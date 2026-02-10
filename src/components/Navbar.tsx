@@ -17,13 +17,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         <a href="/" className="flex items-center gap-2">
-          <div className="relative">
-            <Brain className="h-7 w-7 text-primary animate-pulse-glow" />
-            <Sparkles className="absolute -top-1 -right-1 h-3 w-3 text-accent" />
-          </div>
-          <span className="font-display text-lg font-bold tracking-tight text-foreground">
-            AI Innovators<span className="text-primary"> Forum</span>
-          </span>
+          <img src={logo} alt="AI Innovators Forum" className="h-9 w-auto" />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
