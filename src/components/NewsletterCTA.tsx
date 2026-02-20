@@ -9,7 +9,7 @@ const NewsletterCTA = () => {
     <section className="py-24 relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full blur-[150px] opacity-10" style={{ background: "hsl(185 80% 55%)" }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full blur-[150px] opacity-10" style={{ background: "hsl(220 90% 56%)" }} />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
