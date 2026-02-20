@@ -3,7 +3,14 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/logo.png";
 
-const navLinks = ["Research", "Trends", "Community", "Events", "About"];
+const navLinks = [
+  { label: "Research", href: "#research" },
+  { label: "Lab", href: "https://github.com/AIFrontiersLab", external: true },
+  { label: "Trends", href: "#trends" },
+  { label: "Community", href: "#community" },
+  { label: "Events", href: "#events" },
+  { label: "About", href: "#about" },
+];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -23,11 +30,12 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
+              key={link.label}
+              href={link.href}
+              {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
             >
-              {link}
+              {link.label}
             </a>
           ))}
           <a href="https://chat.whatsapp.com/JkqO11faBJ22ZwNDJfFRvp" target="_blank" rel="noopener noreferrer" className="bg-gradient-cta text-primary-foreground px-5 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity">
@@ -48,12 +56,13 @@ const Navbar = () => {
         >
           {navLinks.map((link) => (
             <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
+              key={link.label}
+              href={link.href}
+              {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               className="text-sm text-muted-foreground hover:text-primary transition-colors"
               onClick={() => setOpen(false)}
             >
-              {link}
+              {link.label}
             </a>
           ))}
           <a href="https://chat.whatsapp.com/JkqO11faBJ22ZwNDJfFRvp" target="_blank" rel="noopener noreferrer" className="bg-gradient-cta text-primary-foreground px-5 py-2 rounded-lg text-sm font-semibold text-center">
