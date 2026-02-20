@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img src={heroBg} alt="" className="w-full h-full object-cover opacity-30" />
         <div className="absolute inset-0 bg-gradient-hero" />
-        <div className="absolute inset-0 bg-background/60" />
+        <div className="absolute inset-0 bg-background/80" />
       </div>
 
       {/* Animated grid */}
@@ -17,8 +17,8 @@ const HeroSection = () => {
         <div
           className="absolute inset-0 animate-grid-flow"
           style={{
-            backgroundImage: `linear-gradient(hsl(185 80% 55% / 0.3) 1px, transparent 1px),
-              linear-gradient(90deg, hsl(185 80% 55% / 0.3) 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(hsl(220 90% 56% / 0.2) 1px, transparent 1px),
+              linear-gradient(90deg, hsl(220 90% 56% / 0.2) 1px, transparent 1px)`,
             backgroundSize: "60px 60px",
             height: "200%",
           }}
@@ -30,13 +30,13 @@ const HeroSection = () => {
         animate={{ y: [-20, 20, -20], x: [-10, 10, -10] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full blur-[100px] opacity-20"
-        style={{ background: "hsl(185 80% 55%)" }}
+        style={{ background: "hsl(220 90% 56%)" }}
       />
       <motion.div
         animate={{ y: [20, -20, 20], x: [10, -10, 10] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
         className="absolute bottom-1/4 right-1/4 w-48 h-48 rounded-full blur-[80px] opacity-15"
-        style={{ background: "hsl(260 60% 60%)" }}
+        style={{ background: "hsl(260 60% 58%)" }}
       />
 
       <div className="relative z-10 container mx-auto px-6 text-center">
