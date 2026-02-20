@@ -71,9 +71,9 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="max-w-2xl mx-auto text-lg text-muted-foreground mb-10 leading-relaxed"
         >
-          Join a global community of researchers, engineers, and visionaries pushing the boundaries
-          of artificial intelligence. Explore cutting-edge research, share breakthroughs, and shape
-          the future.
+          A global community of 1000s of research engineers, AI builders, and forward-thinking innovators collaborating at the edge of intelligence.
+          <br /><br />
+          AI Frontiers is more than a forum — it's a hands-on innovation lab where we build, test, and deploy cutting-edge Agentic AI and intelligent systems in real time. 🚀
         </motion.p>
 
         <motion.div
