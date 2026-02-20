@@ -22,9 +22,9 @@ const Navbar = () => {
       transition={{ duration: 0.6 }}
       className="fixed top-0 left-0 right-0 z-50 glass-panel"
     >
-      <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        <a href="/" className="flex items-center gap-2">
-          <img src={logo} alt="AI Innovators Forum" className="h-9 w-auto" />
+      <div className="container mx-auto flex items-center justify-between px-6 py-1.5">
+        <a href="/" className="flex items-center shrink-0">
+          <img src={logo} alt="AI Frontiers Forum" className="h-10 w-auto max-h-10 object-contain object-center block" />
         </a>
 
         <div className="hidden md:flex items-center gap-8">
