@@ -1,6 +1,6 @@
-# AI Innovators Forum
+# aifrontiersforum
 
-A modern web application for the AI Innovators Forum — showcasing research categories, trending topics, and community features.
+A modern web application for the aifrontiersforum — showcasing research categories, trending topics, and community features.
 
 ## Tech Stack
 
