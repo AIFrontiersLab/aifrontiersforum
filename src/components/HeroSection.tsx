@@ -73,7 +73,7 @@ const HeroSection = () => {
         >
           A global community of 1000s of research engineers, AI builders, and forward-thinking innovators collaborating at the edge of intelligence.
           <br /><br />
-          AI Frontiers is more than a forum — it's a hands-on innovation lab where we build, test, and deploy cutting-edge Agentic AI and intelligent systems in real time. 🚀
+          AI Frontiers is more than a forum, it's a hands-on innovation lab where we build, test, and deploy cutting-edge Agentic AI and intelligent systems in real time. 🚀
         </motion.p>
 
         <motion.div
