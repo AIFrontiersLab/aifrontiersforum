@@ -4,8 +4,8 @@ import { useState } from "react";
 import logo from "@/assets/logo.png";
 
 const navLinks = [
-  { label: "Research", href: "#research" },
   { label: "Lab", href: "https://github.com/AIFrontiersLab", external: true },
+  { label: "Research", href: "#research" },
   { label: "Trends", href: "#trends" },
   { label: "Community", href: "#community" },
   { label: "Events", href: "#events" },
