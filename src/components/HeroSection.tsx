@@ -60,11 +60,9 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.95] mb-6"
         >
-          <span className="text-foreground">Where AI</span>
+          <span className="text-foreground">AI Frontiers</span>
           <br />
-          <span className="text-gradient-primary glow-text">Innovation</span>
-          <br />
-          <span className="text-foreground">Meets Vision</span>
+          <span className="text-gradient-primary glow-text">Forum</span>
         </motion.h1>
 
         <motion.p
