@@ -1,57 +1,93 @@
-# aifrontiersforum
+<div align="center">
 
-A modern web application for the aifrontiersforum — showcasing research categories, trending topics, and community features.
+# 🧠 AI Frontiers Forum
 
-## Tech Stack
+**The global platform for AI research, innovation, and collaboration.**
 
-- **Vite** — Fast build tool and dev server
-- **React 18** — UI library
-- **TypeScript** — Type-safe JavaScript
-- **Tailwind CSS** — Utility-first styling
-- **shadcn/ui** — Accessible component library (Radix UI)
-- **React Router** — Client-side routing
-- **TanStack Query** — Data fetching and caching
-- **Framer Motion** — Animations
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
-## Getting Started
+</div>
 
-### Prerequisites
+---
 
-- [Node.js](https://nodejs.org/) (v18+ recommended)
-- npm (or yarn / pnpm)
+## ✨ What is this?
 
-### Install & Run
+**aifrontiersforum** is a modern, fast web app for the AI Frontiers Forum. It showcases research categories, trending topics, and community features with a polished UI and smooth animations.
 
-```sh
-# Clone the repository
-git clone <YOUR_GIT_URL>
+| Highlights |
+|------------|
+| 📂 Research categories & trending topics |
+| 🎨 Built with **shadcn/ui** and **Tailwind** |
+| ⚡ **Vite** for instant HMR and fast builds |
+| 🎬 **Framer Motion** for fluid animations |
+| 📱 Responsive layout |
+
+---
+
+## 🛠 Tech stack
+
+| Layer | Tech |
+|-------|------|
+| **Build** | Vite 5 |
+| **UI** | React 18, TypeScript |
+| **Styling** | Tailwind CSS, shadcn/ui (Radix) |
+| **Routing** | React Router 6 |
+| **Data** | TanStack Query |
+| **Motion** | Framer Motion |
+
+---
+
+## 🚀 Quick start
+
+**Prerequisites:** [Node.js](https://nodejs.org/) v18+ and npm (or bun/pnpm).
+
+```bash
+# Clone
+git clone https://github.com/your-org/aiinnovatorsforum.git
 cd aiinnovatorsforum
 
-# Install dependencies
+# Install
 npm install
 
-# Start the development server
+# Run
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+Then open **http://localhost:5173** in your browser.
 
-### Other Scripts
+---
 
-| Command        | Description              |
-|----------------|--------------------------|
-| `npm run build`| Production build         |
-| `npm run preview` | Preview production build |
-| `npm run lint` | Run ESLint               |
-| `npm run test`| Run tests                |
+## 📜 Scripts
 
-## Project Structure
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start dev server (Vite HMR) |
+| `npm run build` | Production build → `dist/` |
+| `npm run preview` | Preview production build locally |
+| `npm run lint` | Run ESLint |
+| `npm run test` | Run Vitest tests |
+| `npm run test:watch` | Run tests in watch mode |
 
-- `src/components/` — Reusable UI components (Navbar, HeroSection, Footer, etc.)
-- `src/components/ui/` — shadcn/ui primitives
-- `src/pages/` — Page-level components
-- `src/assets/` — Static assets
+---
 
-## License
+## 📁 Project structure
+
+```
+src/
+├── assets/          # Images, fonts, static files
+├── components/      # Navbar, HeroSection, Footer, etc.
+│   └── ui/          # shadcn/ui components
+├── pages/           # Route-level pages (Index, NotFound)
+├── hooks/           # Custom React hooks
+├── App.tsx
+└── main.tsx
+```
+
+---
+
+## 📄 License
 
 Private project.
