@@ -30,9 +30,9 @@ const Navbar = () => {
               {link}
             </a>
           ))}
-          <button className="bg-gradient-cta text-primary-foreground px-5 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity">
+          <a href="https://chat.whatsapp.com/JkqO11faBJ22ZwNDJfFRvp" target="_blank" rel="noopener noreferrer" className="bg-gradient-cta text-primary-foreground px-5 py-2 rounded-lg text-sm font-semibold hover:opacity-90 transition-opacity">
             Join Forum
-          </button>
+          </a>
         </div>
 
         <button className="md:hidden text-foreground" onClick={() => setOpen(!open)}>
@@ -56,9 +56,9 @@ const Navbar = () => {
               {link}
             </a>
           ))}
-          <button className="bg-gradient-cta text-primary-foreground px-5 py-2 rounded-lg text-sm font-semibold">
+          <a href="https://chat.whatsapp.com/JkqO11faBJ22ZwNDJfFRvp" target="_blank" rel="noopener noreferrer" className="bg-gradient-cta text-primary-foreground px-5 py-2 rounded-lg text-sm font-semibold text-center">
             Join Forum
-          </button>
+          </a>
         </motion.div>
       )}
     </motion.nav>
